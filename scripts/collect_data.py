@@ -4,8 +4,8 @@ import time
 import os
 from datetime import datetime
 
-APP_ID = "7a21a92b"      
-APP_KEY = "bde7b8ebf049b032a3fd48c03e8bf28b"   
+APP_ID = os.environ.get("ADZUNA_APP_ID","7a21a92b")      
+APP_KEY = os.environ.get("ADZUNA_APP_KEY", "bde7b8ebf049b032a3fd48c03e8bf28b")  
 COUNTRY = "in"                   
 WHAT = "data analyst"            
 NUM_PAGES = 10                 
